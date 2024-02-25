@@ -1,0 +1,9 @@
+<!--pages/mine/coupon/coupon.wxml-->
+<view wx:if="{{HZL_height!=0}}">
+  <image class="image"  src="../images/noData.png"></image>
+</view>
+
+<view wx:if="{{HZL_height==0}}">
+  <view>HZL_height==0</view>
+</view>
+

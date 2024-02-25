@@ -1,0 +1,30 @@
+<!--pages/home/home.wxml-->
+<!-- 首页轮播图引用自components/homeSwiper/homeSwiper -->
+<home-swiper imgUrls="{{carouselImgUrls}}" /> 
+
+<!-- 显示轮播图下方的四个view -->
+<view class="father-container">
+  <view class="view-container">
+
+    <view bindtap="goto_QueuePage">
+      <image src="../../static/home/order.png"></image>
+      <image src="../../static/home/queue.jpg"></image>
+    </view>
+    <view bindtap="goto_OrderPage">
+      <image src="../../static/home/dinner.png"></image>
+      <image src="../../static/home/online_order.jpg"></image>
+    </view>
+
+  </view>
+
+  <view class="view-container1">
+    <view bindtap="goto_Map">
+      <image src="../../static/home/takeout.png"></image>
+      <image src="../../static/home/takeout_to_home.jpg"></image>
+    </view>
+    <view bindtap="goto_Shop">
+      <image src="../../static/home/shop.png"></image>
+      <image src="../../static/home/score_shop.jpg"></image>
+    </view>
+  </view>
+</view>

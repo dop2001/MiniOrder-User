@@ -1,0 +1,11 @@
+<!--pages/mine/suggestion/suggestion.wxml-->
+<view class="body">
+  <view class="body-container">
+    <view class="item" bindtap="click" data-number="12331"> 食品卫生监督局举报电话：12331</view>
+    <view class="item" bindtap="click" data-number="12315"> 市场监督管理局举报电话：12315</view>
+    <view class="item" bindtap="click" data-number="19970036491"> 美食小店在线客服电话：19970036491</view>
+    <view class="item font" > 我们将严格对用户的个人信息进行保密</view>
+
+  </view>
+  
+</view>

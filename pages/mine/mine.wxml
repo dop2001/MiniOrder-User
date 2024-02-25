@@ -1,0 +1,81 @@
+<!-- //.wxml
+<view class="container">
+  <image src='./images/noData.png'></image>
+  <view class='text'>
+     为我设置背景图片
+  </view>
+</view> -->
+
+<view>
+  <view class="head">
+  <image class="background" src="./images/mineNackground.jpg">
+    <view wx:if="{{!hasUserInfo}}">
+      <image src="./images/noData.png" class="head-image" bindtap="getUserProfile"></image>
+    </view>
+    <view wx:else="{{hasUserInfo}}" style="display: flex;flex-direction: row">
+      <image src="{{userInfo.avatarUrl}}" class="head-image"></image>
+      <!-- <view class="head-name">{{userInfo.nickName}}👑</view> -->
+      <view class="head-name">美食小店 👑</view>
+    </view>
+  </image>
+
+  </view>
+  <view>
+    <view class="head-bottom-item1">
+      <view class="number">0</view>
+      <view class="number-data">优惠券</view>
+    </view>
+
+    <view class="head-bottom-item1" style="margin-left: 330rpx;margin-top: -90rpx;">
+      <view class="number">￥0</view>
+      <view class="number-data">余额</view>
+    </view>
+
+    <view class="head-bottom-item1" style="margin-left: 510rpx;margin-top: -90rpx;">
+      <view class="number">{{point}}</view>
+      <view class="number-data">积分</view>
+    </view>
+    </view>
+
+    <view class="body">
+      <view class="body-item" bindtap="click" data-id="0">
+        <image class="body-image" src="./images/address.png"></image>
+        <view class="body-font">收货地址</view>
+        <view style="display: flex; margin-left: 490rpx; color: gray;">〉</view>
+      </view>
+
+      <view class="body-item" bindtap="click" data-id="1">
+        <image class="body-image" src="./images/coupon.png"></image>
+        <view class="body-font">优惠买单</view>
+        <view style="display: flex; margin-left: 490rpx; color: gray;">〉</view>
+      </view>
+
+      <view class="body-item" bindtap="click" data-id="2">
+        <image class="body-image" src="./images/orderList.png"></image>
+        <view class="body-font">全部订单</view>
+        <view style="display: flex; margin-left: 490rpx; color: gray;">〉</view>
+      </view>
+
+      <view class="body-item" bindtap="click" data-id="3">
+        <image class="body-image" src="./images/shopMall.png"></image>
+        <view class="body-font">兑换记录</view>
+        <view style="display: flex; margin-left: 490rpx; color: gray;">〉</view>
+      </view>
+
+      <view class="body-item" bindtap="click" data-id="4">
+        <image class="body-image" src="./images/complaint.png"></image>
+        <view class="body-font">投诉建议</view>
+        <view style="display: flex; margin-left: 490rpx; color: gray;">〉</view>
+      </view>
+
+      <view class="body-item" bindtap="click" data-id="5">
+        <image class="body-image" src="./images/aboutWe.png"></image>
+        <view class="body-font">关于我们</view>
+        <view style="display: flex; margin-left: 490rpx; color: gray;">〉</view>
+      </view>
+    </view>
+</view>
+
+<view class="level">
+  <view style="font-weight: 500; color: gray;">v1.0.0</view>
+</view>

@@ -1,0 +1,89 @@
+/* pages/mine/aboutMe/aboutMe.wxss */
+.body-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400rpx;
+  /* background-color: rebeccapurple; */
+}
+.aboutMe {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  flex-direction: column;
+  height: 300rpx;
+  width: 700rpx;
+  border-radius: 20rpx;
+  /* background-color: red; */
+  background-color: white;
+}
+.title {
+  display: flex;
+  height: 50rpx;
+  width: 700rpx;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: medium;
+  /* background-color: turquoise; */
+}
+.name {
+  display: flex;
+  height: 50rpx;
+  width: 680rpx;
+  align-items: center;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  /* background-color: wheat; */
+}
+
+.update-container {
+  height: 950rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;  
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+  /* background-color: violet; */
+  background-color: white;
+}
+
+.box {
+  padding: 30rpx;
+}
+.one {
+  position: relative;
+  padding-bottom: 40rpx;
+}
+.onedot {
+  left: -2rpx;
+  width: 24rpx;
+  height: 24rpx;
+  position: absolute;
+  background-color: #67c23a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.oneline {
+  position: absolute;
+  left: 8rpx;
+  height: 100%;
+  border-left: 2px solid #e4e7ed;
+}
+.onemain {
+  position: relative;
+  padding-left: 56rpx;
+  top: -6rpx;
+}
+.onemaintitle {
+  margin-bottom: 16rpx;
+  padding-top: 8rpx;
+  color: #909399;
+  line-height: 1;
+  font-size: 26rpx;
+}
+.onemaincon {
+  color: #303133;
+}

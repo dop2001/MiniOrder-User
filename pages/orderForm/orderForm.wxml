@@ -1,0 +1,84 @@
+<view wx:if="{{display}}">
+  <!-- 分类栏 -->
+  <view class='HZL_classify'>
+          <view wx:for = '{{HZL_categories}}' wx:key = 'id'>
+              <view class='HZL_categories' bindtap='HZL_categories' data-index='{{index}}'>
+                <text class="{{index === HZL_swiper_ID ? 'HZL_categories_text' : 'tongyi'}}">{{item}}</text>
+                  <view class="{{index == HZL_swiper_ID ? 'line' :''}}"></view>
+              </view>
+          </view>
+  </view>
+
+  <view wx:if="{{HZL_swiper_ID == 0}}">
+    <view wx:if="{{historyList.length == 0}}">
+      <view class="img" style="height: {{HZL_height}}px;">
+        <image src="images/noData.png" class="noDataImg"></image>
+      </view>
+    </view>
+    <view wx:else="{{historyList.length != 0}}">
+      <scroll-view scroll-y="true" style="height: {{HZL_height}}px;">
+        <view class="scroll-item" wx:for="{{historyList}}" wx:key="id" data-id="{{item.oid}}" data-number="{{item.number}}" data-date="{{item.checkoutTime}}" data-otype="0" bindtap="getInformation">
+          <view class="item-top">
+            <image src="./images/top-shop.png" class="item-image"></image>
+            <view class="item-name">美食小店(北京工大店)</view>
+            <view class="item-pay">已付款</view>
+          </view>
+          <view class="item-medium-left">
+            <view class="item-number">订单号:{{item.number}}</view>
+            <view class="item-money">￥{{item.amount}}</view>
+          </view>
+          <view class="item-bottom">
+            <view class="item-bottom-left">日期：{{item.checkoutTime}}</view>
+            <view class="item-bottom-right" >查看详情</view>
+          </view>
+          
+        </view>
+      </scroll-view>
+    </view>
+    
+  </view>
+
+  <view wx:if="{{HZL_swiper_ID == 1}}">
+    <!-- <view wx:if="{{true}}">
+      <view class="img" style="height: {{HZL_height}}px;">
+        <image src="images/noData.png" class="noDataImg"></image>
+      </view>
+    </view> -->
+
+    <view wx:if="{{historyOrderList.length == 0}}">
+      <view class="img" style="height: {{HZL_height}}px;">
+        <image src="images/noData.png" class="noDataImg"></image>
+      </view>
+    </view>
+    <view wx:else="{{historyOrderList.length != 0}}">
+      <scroll-view scroll-y="true" style="height: {{HZL_height}}px;">
+        <view class="scroll-item" wx:for="{{historyOrderList}}" wx:key="id" data-id="{{item.oid}}" data-number="{{item.uuid}}" data-date="{{item.orderTime}}" data-otype="{{item.otype}}" bindtap="getInformation">
+          <view class="item-top">
+            <image src="./images/top-shop.png" class="item-image"></image>
+            <view class="item-name">美食小店(南昌航空大学店)</view>
+            <view class="item-pay">已付款</view>
+          </view>
+          <view class="item-medium-left">
+            <view class="item-number">订单号:{{item.uuid}}</view>
+            <view class="item-money">￥{{item.oralPrice}}</view>
+          </view>
+          <view class="item-bottom">
+            <view class="item-bottom-left">日期：{{item.orderTime}}</view>
+            <view class="item-bottom-right" >查看详情</view>
+          </view>
+          
+        </view>
+      </scroll-view>
+    </view>
+
+  </view>
+
+  <view wx:if="{{HZL_swiper_ID == 2}}">
+    <view wx:if="{{true}}">
+      <view class="img" style="height: {{HZL_height}}px;">
+        <image src="images/noData.png" class="noDataImg"></image>
+      </view>
+    </view>
+  </view>
+
+</view>

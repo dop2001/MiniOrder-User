@@ -1,0 +1,30 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 300rpx;
+  /* background-color: crimson; */
+}
+.body-container {
+  display: flex;
+  flex-direction: column;
+  height: 250rpx;
+  margin: 30rpx;
+  border-radius: 10rpx;
+  font: large;
+  font-weight: 600;
+  background-color: burlywood;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rpx;
+  margin-left: 10rpx;
+}
+.font{
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+  color: gray;
+  font-size: small;
+  font-weight: 600;
+}

@@ -1,0 +1,114 @@
+/* pages/home/home.wxss */
+.father-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  padding: 120rpx 0;
+  box-sizing: border-box; 
+  /* background-color: lightgreen; */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.25);
+}
+.view-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* background-color: black; */
+}
+.view-container view {
+  
+  background-color: #FFFFFF;
+  width: 300rpx;
+  height: 250rpx;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  box-shadow:0px 0px 5px 0px  #D0D0D0 ;
+  border: 3rpx solid #D0D0D0
+}
+.view-container view:nth-child(1) {
+  /* background-color: lightskyblue; */
+  margin: 0rpx 20rpx 20rpx 70rpx;
+  border-top-left-radius: 15px;
+}
+.view-container view:nth-child(2) {
+  /* background-color: red; */
+  margin: 0rpx 70rpx 20rpx 20rpx;
+  border-top-right-radius: 15px;
+ 
+}
+
+
+.father-container image:nth-child(1) {
+  height: 40%;
+  width: 45%;
+}
+.father-container image:nth-child(2) {
+  height: 25%;
+  width: 55%;
+}
+.father-container image:nth-child(3) {
+  height: 40%;
+  width: 45%;
+}
+.father-container image:nth-child(4) {
+  height: 25%;
+  width: 55%;
+}
+.father-container image:nth-child(5) {
+  height: 40%;
+  width: 45%;
+}
+.father-container image:nth-child(6) {
+  height: 25%;
+  width: 55%;
+}
+.father-container image:nth-child(7) {
+  height: 40%;
+  width: 45%;
+}
+.father-container image:nth-child(8) {
+  height: 25%;
+  width: 55%;
+}
+
+.view-container1 {
+  /* background-color: red; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.view-container1 view {
+  
+  background-color: #FFFFFF;
+  width: 300rpx;
+  height: 250rpx;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  box-shadow:0px 0px 5px 0px  #D0D0D0 ;
+  border: 3rpx solid #D0D0D0
+}
+.view-container1 view:nth-child(1) {
+  
+  margin: 20rpx 20rpx 0rpx 70rpx;
+  border-bottom-left-radius: 15px;
+}
+.view-container1 view:nth-child(2) {
+
+  margin: 20rpx 70rpx 0rpx 20rpx;
+  border-bottom-right-radius: 15px;
+}

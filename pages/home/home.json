@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "home-swiper": "../../components/homeSwiper/homeSwiper"
+  },
+  "navigationBarTitleText": "首页",
+  "navigationBarBackgroundColor": "#8B1B10",
+  "navigationBarTextStyle": "white"
+}

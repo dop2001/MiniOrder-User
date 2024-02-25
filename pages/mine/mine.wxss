@@ -1,0 +1,130 @@
+/* 
+.container{
+  width: 100%;
+  height: 600rpx;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+image{
+  position: absolute;
+  width: 100%;
+  height: 600rpx;
+}
+.text{
+  position: absolute;
+  display: flex;
+  margin-top: 200rpx;
+  z-index: 1;
+} */
+
+.head {
+  display: flex;
+  height: 330rpx;
+  /* background-color: #FE5455; */
+}
+.background {
+  position: absolute;
+  display: flex;
+  height: 330rpx;
+  width: 100%;
+  z-index: 0;
+}
+.head-image-view {
+  position: absolute;
+  display: flex;
+  height: 130rpx;
+  width: 130rpx;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  /* background-color: blue; */
+}
+.head-image {
+  display: flex;
+  height: 130rpx;
+  width: 130rpx;
+  margin-top: 80rpx;
+  margin-left: -700rpx;
+  border-radius: 100%;
+  z-index: 1;
+  /* background-color: yellow; */
+}
+.head-name {
+  display: flex;
+  height: 60rpx;
+  width: 200rpx;
+  margin-top: 115rpx;
+  margin-left: 20rpx;
+  /* color: #F0F0F0; */
+  color: rgb(180,100,100);
+  font-size: large;
+  font-weight: 600;
+  /* background-color: blue; */
+}
+.head-bottom-item1 {
+  position: absolute;
+  display: flex;
+  height: 90rpx;
+  width: 120rpx;
+  flex-direction: column;
+  margin-top: -90rpx;
+  margin-left: 150rpx;
+  /* background-color: blueviolet; */
+}
+.number {
+  display: flex;
+  height: 45rpx;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  font-weight: 600;
+  /* background-color: whitesmoke; */
+}
+.number-data {
+  display: flex;
+  height: 45rpx;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  font-weight: 600;
+  /* background-color: yellow; */
+}
+.body {
+  display: flex;
+  height: 640rpx;
+  width: 100%;
+  margin-top: 20rpx;
+  flex-direction: column;
+  /* background-color: blue; */
+}
+.body-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+  width: 100%;
+  margin-left: 20rpx;
+  border-bottom: 1px solid rgb(50,50,50,0.1);
+  /* background-color: red; */
+}
+.body-image {
+  display: flex;
+  height: 50rpx;
+  width: 50rpx;
+  /* background-color: brown; */
+}
+.body-font {
+  display: flex;
+  margin-left: 10rpx; 
+  font-weight: 600;
+  color: rgb(50,50,50,0.8);
+  /* background-color: green; */
+}
+.level {
+  display: flex;
+  margin-top: 20rpx;
+  justify-content: center;
+}

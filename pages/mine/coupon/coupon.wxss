@@ -1,0 +1,10 @@
+/* pages/mine/coupon/coupon.wxss */
+page {
+  background-color:#fff;
+}
+.image {
+  display: flex;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 400rpx;
+}

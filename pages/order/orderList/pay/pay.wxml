@@ -1,0 +1,13 @@
+<!--pages/orderList/pay/pay.wxml-->
+<view>
+  <view class="container-img">
+    <image src="/static/order/paySuccess.jpg" class="img"></image>
+  </view>
+  <view class="container-success">
+    <view class="name">美食小店</view>
+    <view class="money">￥{{money}}.00</view>   
+  </view>
+  <view class="container-button">
+    <view class="button" bindtap="click">完成</view>
+  </view>
+</view>

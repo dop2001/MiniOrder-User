@@ -1,0 +1,23 @@
+<!--pages/mine/aboutMe/aboutMe.wxml-->
+<view class="body-container">
+  <view class="aboutMe">
+    <view class="title">关于我们</view>
+    <view class="name">团队成员：dop2001、Huang Xiang</view>
+    <view class="name">完成时间：2022/08/29 - 2022/10/10</view>
+    <text class='name' selectable='true'>开源地址: https://github.com/dop2001</text>
+  </view>
+</view>
+
+<view class="update-container">
+  <view class="title">更新日志</view>
+  <view class="box">
+  <view wx:for="{{list}}" wx:key="index" class="one">
+    <view class="onedot"></view>
+    <view wx:if="{{index!=list.length-1}}" class="oneline"></view>
+    <view class="onemain">
+      <view class="onemaintitle">{{item.time}}</view>
+      <view class="onemaincon">{{item.con}}</view>
+    </view>
+  </view>
+</view>
+</view>

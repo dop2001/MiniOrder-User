@@ -1,0 +1,86 @@
+<!--pages/orderList/orderList.wxml-->
+<view class="title">
+  <view class="title-image">
+    <image src="/static/order/top-shop.png" style="height: 80rpx;width: 80rpx;"></image>
+  </view>
+  <view class="container-item">
+    <view class="title-name">美食小店</view>
+    <view class="title-home" wx:if="{{!orderStatus}}">到店就餐</view>
+    <view class="title-home" wx:if="{{orderStatus}}">外卖点餐</view>
+  </view>
+
+  <view class="title-school">北京工大店</view>
+</view>
+
+<view class="container-body">
+  <view class="body-title">餐品详情</view>
+  <view wx:for="{{orderList}}" wx:key="id">
+    <view class="body-item">
+      <view class="body-item-image">
+        <image class="image" src="{{item.cover_pic}}"></image>
+      </view>
+      <view class="body-item-name">{{item.name}}</view>
+      <view class="body-item-number">×{{item.num}}</view>
+      <view class="body-item-price">￥{{item.fprice}}</view>
+   </view>
+  </view>
+  <view class="xiaoji">
+    <view style="width: 200rpx;display: flex;margin-bottom: 30rpx;margin-right: 18rpx;justify-content: flex-end;font-size: larger;font-weight: 600;">小计 ￥{{total}}</view>
+  </view>
+</view>
+
+<view class="container-bottom">
+  <view style="display: flex;flex-direction: row;border-bottom: solid 2rpx rgb(0,0,0,0.1);">
+    <view class="bottom-font1">开票方式</view>
+   <view class="bottom-font2">请在取餐时洽服务员开票</view>
+  </view>
+  <view style="display: flex;flex-direction: row;border-bottom: solid 2rpx rgb(0,0,0,0.2);" bindtap="modalinput">
+    <view class="bottom-font1">备注</view>
+    <view class="bottom-font2">口味、偏好等要求 ></view>
+  </view>
+  <view style="display: flex;flex-direction: row;" bindtap="address"
+  wx:if="{{orderStatus}}">
+    <view class="bottom-font1">收获地址</view>
+    <view class="bottom-font2">更改您的收获地址 ></view>
+  </view>
+</view>
+
+<view class="container-button">
+  <view class="button-left">￥{{total}}</view>
+  <view class="button-right" bindtap="click">
+    <view class="button-right-item1">提交订单</view>
+    <view class="button-right-item2">Checkout</view>
+  </view>
+</view>
+
+<!-- 密码输入框 -->
+<view wx:if='{{showPayPwdInput}}'>
+    <view class='bg_layer'></view>
+    <view class='input_main'>
+        <view class='input_title'>
+            <view class='input_back' catchtap='hidePayLayer'><text></text></view>
+            <text>输入支付密码</text>
+        </view>
+        <view class='input_tip'><text>使用会员卡余额支付需要验证身份，验证通过后才可进行支付。</text></view>
+        <view class='input_row' catchtap='getFocus'>
+            <view class='pwd_item' wx:for='{{6}}' wx:key='item' wx:for-index='i'>
+                <text wx:if='{{pwdVal.length>i}}'></text>
+            </view>
+        </view>
+        <view class='forget_pwd' catchtap='hidePayLayer'>忘记密码</view>
+        <input class='input_control' password type='number' focus='{{payFocus}}' bindinput='inputPwd' maxlength='6'/>
+    </view>
+</view>
+
+
+<!-- <button class="delete">
+ <text>删除</text>
+   </button>
+   <button class="edit" bindtap="modalinput">
+     <text>编辑</text>
+   </button> -->
+   <modal hidden="{{hiddenmodalput}}" title="备注" 
+   			confirm-text="提交" cancel-text="取消" bindcancel="modalinput" 
+   			bindconfirm="confirm">
+     <textarea bindinput="bindinput" placeholder="请输入口味、偏好的要求" value="{{beizhu}}"></textarea>
+   </modal>

@@ -1,0 +1,46 @@
+<!--pages/orderForm/orderListInfo/orderListInfo.wxml-->
+<view wx:if="{{display}}">
+  <view class="title">
+  <view class="title-image">
+    <image src="./images/top-shop.png" style="height: 80rpx;width: 80rpx;"></image>
+  </view>
+  <view class="container-item">
+    <view class="title-name">美食小店</view>
+    <view class="title-home">历史订单</view>
+  </view>
+
+  <view class="title-school">南昌航空大学店</view>
+</view>
+
+<view class="container-body">
+  <view class="body-title">订单详情</view>
+  <view wx:for="{{orderList.lists}}" wx:key="id">
+    <view class="body-item">
+      <view class="body-item-image">
+        <image class="image" src="{{item.food.img}}"></image>
+      </view>
+      <view class="body-item-name">{{item.food.fname}}</view>
+      <view class="body-item-number">×{{item.foodCount}}</view>
+      <view class="body-item-price">￥{{item.fprice}}</view>
+   </view>
+  </view>
+  <view class="xiaoji">
+    <view style="width: 200rpx;display: flex;margin-bottom: 30rpx;margin-right: 18rpx;justify-content: flex-end;font-size: larger;font-weight: 600;">小计 ￥{{orderList.oralPrice}}</view>
+  </view>
+</view>
+<view class="container-bottom">
+  <view style="display: flex;flex-direction: row;">
+    <view class="bottom-font1">单 号：{{number}}</view>
+  </view>
+  <view style="display: flex;flex-direction: row;">
+    <view class="bottom-font1">日 期：{{date}}</view>
+  </view>
+
+  <view style="display: flex;flex-direction: row;">
+    <view class="bottom-font1" style="margin-bottom: 15rpx;">方 式：{{str}}</view>
+  </view>
+
+</view>
+
+
+</view>

@@ -1,0 +1,34 @@
+
+    <view wx:if="{{historyList.length == 0}}">
+      <view class="img" style="height: {{HZL_height}}px;">
+        <image src="../images/noData.png" class="noDataImg"></image>
+      </view>
+    </view>
+    <view wx:else="{{historyList.length != 0}}">
+      <scroll-view scroll-y="true" style="height: {{HZL_height}}px;">
+        <view class="scroll-item" wx:for="{{historyList}}" wx:key="id">
+          <view class="item-top">
+            <image src="./images/top-shop.png" class="item-image"></image>
+            <view class="item-name">积分兑换</view>
+            <view class="item-pay" wx:if="{{!item.status}}">已兑换</view>
+            <view class="item-pay" wx:else="{{item.status}}">未兑换</view>
+          </view>
+          <view class="item-medium-left">
+            <view class="item-number">兑换码: {{item.code}}</view>
+            <view class="item-money">
+            {{item.shopItem.needPoint}}积分</view>
+          </view>
+          <view class="item-bottom-name">
+            <view class="item-bottom-left">名 称: {{item.shopItem.sname}}</view>
+            <!-- <view class="item-bottom-right" >查看详情</view> -->
+          </view>
+          <view class="item-bottom">
+            <view class="item-bottom-left">日 期：{{item.extime}}</view>
+            <!-- <view class="item-bottom-right" >查看详情</view> -->
+          </view>
+
+          
+        </view>
+      </scroll-view>
+    </view>
+
