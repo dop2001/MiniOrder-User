@@ -1,6 +1,6 @@
-## 1、介绍
+## 1. Introduction
 
-用户端微信小程序代码，支持用户点餐、支付等功能。使用到的技术和工具有：
+The client WeChat Mini Program Code supports functions such as ordering food and payment. Technologies and tools used include:
 
 - WXSS、WXCSS
 
@@ -8,7 +8,7 @@
 
   
 
-## 2、界面展示
+## 2. Page display
 
 <p>
 	<img src="README_zh-CN.assets/image-20240225174906746.png" width="30%">
@@ -24,11 +24,11 @@
 
 
 
-## 3、部署步骤
+## 3、Deployment steps
 
-1. 下载[微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)。
+1. Download [WeChat Developer Tool](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)。
 
-2. 克隆本仓库代码，并修改 `project.config.json`  文件中的 `appid` 为你自己appid。
+2. Clone the code of this repository and modify the `appid` in the `project.config.json` file to your own appid.
 
    ```shell
    git clone https://github.com/dop2001/MiniOrder-User.git
@@ -37,6 +37,7 @@
    "appid": "Your appid"
    ```
 
-3. 将项目导入微信开发者工具中。
-4. 按照此[教程]([dop2001/MiniOrder-Backend: Back-end service of ordering app (github.com)](https://github.com/dop2001/MiniOrder-Backend))部署后端代码。
-5. 点击微信开发者工具中的编译按钮，运行并预览程序。
+3. Import the project into the WeChat developer tool.
+4. Follow this [tutorial](https://github.com/dop2001/MiniOrder-Backend) to deploy backend code.
+5. Click the compile button in the WeChat developer tool to run and preview the program.
+
