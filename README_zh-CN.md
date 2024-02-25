@@ -6,7 +6,7 @@
 
 ## 2、界面展示
 
-<p>
+<p float="center">
     <img src="README_zh-CN.assets/image-20240225174906746.png" width="30%"><img src="README_zh-CN.assets/image-20240225175220793.png" width="30%"><img src="README_zh-CN.assets/image-20240225175306466.png" width="30%">
 </p>
 
