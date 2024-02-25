@@ -2,7 +2,7 @@
 
 The client WeChat Mini Program Code supports functions such as ordering food and payment. Technologies and tools used include:
 
-- WXSS、WXCSS
+- Wxss、Wxml
 
 - JavaScript
 

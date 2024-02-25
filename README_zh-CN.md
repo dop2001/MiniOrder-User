@@ -2,7 +2,7 @@
 
 用户端微信小程序代码，支持用户点餐、支付等功能。使用到的技术和工具有：
 
-- WXSS、WXCSS
+- wxss、wxml
 
 - JavaScript
 
